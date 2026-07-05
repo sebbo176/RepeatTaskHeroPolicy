@@ -1,0 +1,17 @@
+Brisbane Outdoors — Privacy Policy
+
+Brisbane Outdoors collects no data. None.
+
+The app has no accounts, no analytics, no advertising, and no tracking of any kind. There is nothing to sign up for and nothing is ever transmitted to us — we operate no servers.
+
+Location: if you grant location access (optional, while-using only), it is used solely on your device to centre the map and sort the nearby-parks list. It is never stored, logged, or transmitted anywhere.
+
+Offline by design: all park and amenity data ships inside the app and works without any network connection.
+
+Purchases: the one-time unlock is processed entirely by Apple through the App Store. We never see your payment details. The free-trial start date is stored only on your device.
+
+Data sources: park and amenity information is public open data — © Brisbane City Council (CC BY 4.0, data.brisbane.qld.gov.au; data may have been modified), playground locations © OpenStreetMap contributors (ODbL), and toilet locations derived from the National Public Toilet Map (provided without warranty). Brisbane Outdoors is an independent app and is not affiliated with, or endorsed by, Brisbane City Council.
+
+Questions about this policy? Contact Sebastian Bolling at sebastian.bolling@gmail.com.
+
+Last updated: 5 July 2026
