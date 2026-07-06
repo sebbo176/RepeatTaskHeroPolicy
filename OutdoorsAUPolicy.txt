@@ -1,0 +1,17 @@
+Sydney & Melbourne Outdoors — Privacy Policy
+
+Sydney & Melbourne Outdoors collects no data. None.
+
+The app has no accounts, no analytics, no advertising, and no tracking of any kind. There is nothing to sign up for and nothing is ever transmitted to us — we operate no servers.
+
+Location: if you grant location access (optional, while-using only), it is used solely on your device to centre the map and sort the nearby-parks list. It is never stored, logged, or transmitted anywhere.
+
+Offline by design: all park and amenity data for both cities ships inside the app and works without any network connection. Switch between Sydney and Melbourne from the picker at the top of the map.
+
+Purchases: the one-time unlock — which covers both cities — is processed entirely by Apple through the App Store. We never see your payment details. The free-trial start date is stored only on your device.
+
+Data sources: park and amenity information is public open and community data — parks, BBQs, playgrounds and drinking water © OpenStreetMap contributors (ODbL); Sydney park data © City of Sydney (CC BY 4.0) and © State of New South Wales, Spatial Services (CC BY 3.0 AU); Melbourne park data © State of Victoria, Victorian Planning Authority (CC BY 3.0 AU); toilet locations derived from the National Public Toilet Map, © Commonwealth of Australia (CC BY 3.0 AU, provided without warranty). Data may have been modified. Sydney & Melbourne Outdoors is an independent app and is not affiliated with, or endorsed by, any council or government body.
+
+Questions about this policy? Contact Sebastian Bolling at sebastian.bolling@gmail.com.
+
+Last updated: 6 July 2026
