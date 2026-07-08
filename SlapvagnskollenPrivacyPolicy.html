@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv" data-lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integritetspolicy · Släpvagnskollen</title>
+<meta name="description" content="Integritetspolicy för appen Släpvagnskollen.">
+<style>
+  :root{
+    --bg:#ffffff; --surface:#f9f9f9; --border:#dbdbdb;
+    --text:#000000; --text-2:#333333; --text-3:#8a8a8a;
+    --accent:#50d764; --yellow:#ffe646; --red:#ff5064; --purple:#cd96ff;
+    --radius:16px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#121212; --surface:#1e1e1e; --border:#333333;
+      --text:#f5f5f5; --text-2:#b8b8b8; --text-3:#8a8a8a;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 0 96px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-3); margin:0 0 10px;}
+  h1{font-family:Georgia,"Times New Roman",serif; font-weight:700; font-size:34px; line-height:1.1; letter-spacing:-.01em; margin:0 0 8px;}
+  h2{font-family:Georgia,"Times New Roman",serif; font-weight:700; font-size:22px; line-height:1.2; margin:40px 0 10px;}
+  p{margin:0 0 14px; color:var(--text);}
+  .lead{color:var(--text-2); font-size:18px;}
+  .muted{color:var(--text-2);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:6px 0;}
+  a{color:var(--text); text-decoration:underline; text-underline-offset:2px;}
+  a:hover{text-decoration-thickness:2px;}
+  code,.reg{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; margin:18px 0;}
+  .updated{color:var(--text-3); font-size:14px; margin-top:6px;}
+  .divider{height:1px; background:var(--border); border:0; margin:40px 0;}
+  footer{color:var(--text-3); font-size:13px; margin-top:48px;}
+  /* language toggle */
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:36px;}
+  .toggle{display:inline-flex; border:1px solid var(--border); border-radius:999px; overflow:hidden;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--text-2); font:inherit; font-weight:700; font-size:13px; padding:6px 14px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--text); color:var(--bg);}
+  .lang-en{display:none;}
+  html[data-lang="en"] .lang-sv{display:none;}
+  html[data-lang="en"] .lang-en{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <span class="eyebrow">Släpvagnskollen</span>
+    <div class="toggle" role="group" aria-label="Språk / Language">
+      <button type="button" data-set="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Integritetspolicy</p>
+    <h1>Din integritet i Släpvagnskollen</h1>
+    <p class="lead">Släpvagnskollen är byggd för att respektera din integritet. Appen kräver inget konto, visar ingen reklam och spårar dig inte. Här förklarar vi exakt vilka uppgifter som hanteras.</p>
+    <p class="updated">Senast uppdaterad: 8 juli 2026</p>
+
+    <h2>Manuell beräkning</h2>
+    <p>När du fyller i vikter på fliken <strong>Manuellt</strong> behandlas de bara på din enhet för att räkna ut behörigheten. Uppgifterna skickas aldrig någonstans.</p>
+
+    <h2>Sökning via registreringsnummer</h2>
+    <p>Använder du den (betalda) funktionen <strong>Via regnr</strong> skickas de registreringsnummer du anger till tjänsten <a href="https://biluppgifter.se" rel="noopener">Biluppgifter.se</a> för att hämta fordonets och släpets vikter. Den förfrågan hanteras av Biluppgifter.se enligt deras egen integritetspolicy.</p>
+    <p>Vi driver <strong>inga egna servrar</strong> och lagrar varken dina registreringsnummer eller resultatet på någon server.</p>
+
+    <h2>Sökhistorik</h2>
+    <p>Sparade sökningar lagras <strong>endast lokalt</strong> på din enhet. Du kan ta bort en sökning när som helst, och all historik försvinner om du avinstallerar appen.</p>
+
+    <h2>Köp i appen</h2>
+    <p>Betalningen för en uppslagning hanteras av <strong>Apple</strong> via App Store. Vi tar aldrig del av dina betaluppgifter – Apple behandlar betalningar enligt Apples integritetspolicy.</p>
+
+    <h2>Ingen spårning eller reklam</h2>
+    <p>Appen innehåller inga annonser, ingen analys och inga tredjepartsverktyg för spårning eller datainsamling.</p>
+
+    <h2>Delning</h2>
+    <p>När du delar ett resultat (t.ex. till Anteckningar, e-post eller sms) styr du själv vart det skickas via iOS inbyggda delningsfunktion.</p>
+
+    <h2>Ändringar</h2>
+    <p>Vi kan komma att uppdatera den här policyn. Eventuella ändringar publiceras på den här sidan med nytt datum.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Kontakt</h2>
+      <p class="muted" style="margin:0">Har du frågor om integritet? Kontakta utvecklaren Sebastian Bolling på <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Your privacy in Släpvagnskollen</h1>
+    <p class="lead">Släpvagnskollen is built to respect your privacy. The app needs no account, shows no ads and does not track you. Below we explain exactly what data is handled.</p>
+    <p class="updated">Last updated: 8 July 2026</p>
+
+    <h2>Manual calculation</h2>
+    <p>When you enter weights on the <strong>Manuellt</strong> (Manual) tab, they are processed only on your device to work out the licence category. They are never sent anywhere.</p>
+
+    <h2>Registration-number lookup</h2>
+    <p>If you use the (paid) <strong>Via regnr</strong> feature, the registration numbers you enter are sent to <a href="https://biluppgifter.se" rel="noopener">Biluppgifter.se</a> to retrieve the vehicle and trailer weights. That request is handled by Biluppgifter.se under their own privacy policy.</p>
+    <p>We run <strong>no servers of our own</strong> and store neither your registration numbers nor the results on any server.</p>
+
+    <h2>Search history</h2>
+    <p>Saved searches are stored <strong>locally on your device only</strong>. You can delete a search at any time, and all history is removed if you uninstall the app.</p>
+
+    <h2>In-app purchases</h2>
+    <p>Payment for a lookup is handled by <strong>Apple</strong> via the App Store. We never receive your payment details – Apple processes payments under Apple's privacy policy.</p>
+
+    <h2>No tracking or ads</h2>
+    <p>The app contains no advertising, no analytics and no third-party tracking or data-collection tools.</p>
+
+    <h2>Sharing</h2>
+    <p>When you share a result (e.g. to Notes, email or SMS) you choose where it goes via the standard iOS share sheet.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. Any changes will be posted on this page with a new date.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="muted" style="margin:0">Questions about privacy? Contact the developer, Sebastian Bolling, at <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Sebastian Bolling · Släpvagnskollen</footer>
+</div>
+
+<script>
+  (function(){
+    var html=document.documentElement;
+    var btns=document.querySelectorAll('.toggle button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var lang=b.getAttribute('data-set');
+        html.setAttribute('data-lang',lang);
+        html.setAttribute('lang',lang);
+        btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+      });
+    });
+  })();
+</script>
+</body>
+</html>

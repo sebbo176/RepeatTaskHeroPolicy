@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv" data-lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Släpvagnskollen</title>
+<meta name="description" content="Support och vanliga frågor för appen Släpvagnskollen.">
+<style>
+  :root{
+    --bg:#ffffff; --surface:#f9f9f9; --border:#dbdbdb;
+    --text:#000000; --text-2:#333333; --text-3:#8a8a8a;
+    --green:#50d764; --yellow:#ffe646; --red:#ff5064;
+    --radius:16px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#121212; --surface:#1e1e1e; --border:#333333;
+      --text:#f5f5f5; --text-2:#b8b8b8; --text-3:#8a8a8a;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 0 96px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--text-3); margin:0 0 10px;}
+  h1{font-family:Georgia,"Times New Roman",serif; font-weight:700; font-size:34px; line-height:1.1; letter-spacing:-.01em; margin:0 0 8px;}
+  h2{font-family:Georgia,"Times New Roman",serif; font-weight:700; font-size:22px; line-height:1.2; margin:40px 0 10px;}
+  h3{font-size:16px; font-weight:700; margin:20px 0 4px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--text-2); font-size:18px;}
+  .muted{color:var(--text-2);}
+  ul{margin:0 0 14px; padding-left:20px;} li{margin:6px 0;}
+  a{color:var(--text); text-decoration:underline; text-underline-offset:2px;}
+  a:hover{text-decoration-thickness:2px;}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; margin:18px 0;}
+  .rows{margin:8px 0 4px;}
+  .row{display:flex; align-items:center; gap:12px; padding:10px 0; border-top:1px solid var(--border);}
+  .row:first-child{border-top:0;}
+  .badge{flex:none; min-width:52px; text-align:center; border-radius:10px; padding:4px 10px; font-family:Georgia,serif; font-weight:700; color:#000;}
+  .b{background:var(--green)} .b96{background:var(--yellow)} .be{background:var(--red)}
+  .disclaimer{font-size:14px; color:var(--text-2);}
+  footer{color:var(--text-3); font-size:13px; margin-top:48px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:36px;}
+  .toggle{display:inline-flex; border:1px solid var(--border); border-radius:999px; overflow:hidden;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--text-2); font:inherit; font-weight:700; font-size:13px; padding:6px 14px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--text); color:var(--bg);}
+  .lang-en{display:none;}
+  html[data-lang="en"] .lang-sv{display:none;}
+  html[data-lang="en"] .lang-en{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <span class="eyebrow">Släpvagnskollen</span>
+    <div class="toggle" role="group" aria-label="Språk / Language">
+      <button type="button" data-set="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Vi hjälper dig gärna</h1>
+    <p class="lead">Vi vill att du ska få ut det mesta av Släpvagnskollen. Kör du fast eller undrar något finns vi här för att hjälpa dig.</p>
+
+    <h2>Så funkar appen</h2>
+    <ul>
+      <li><strong>Manuellt:</strong> fyll i de fyra vikterna från registreringsbevisen och tryck på <em>Beräkna behörighet</em>.</li>
+      <li><strong>Via regnr:</strong> låt appen slå upp vikterna automatiskt via registreringsnumren. Det kräver ett köp i appen eftersom datakällan kostar per anrop.</li>
+      <li><strong>Resultat:</strong> du ser vilken behörighet som krävs och en viktstapel. Du kan dela eller spara sökningen.</li>
+      <li><strong>Sökhistorik &amp; tema:</strong> sparade sökningar hittar du under Sökhistorik, och du kan växla mellan ljust, mörkt och automatiskt tema.</li>
+    </ul>
+
+    <h2>Vilken behörighet krävs?</h2>
+    <div class="rows">
+      <div class="row"><span class="badge b">B</span><span>Kombinerad vikt upp till 3 500 kg (även släp med totalvikt högst 750 kg).</span></div>
+      <div class="row"><span class="badge b96">B96</span><span>Kombinerad vikt 3 500–4 250 kg.</span></div>
+      <div class="row"><span class="badge be">BE</span><span>Kombinerad vikt över 4 250 kg.</span></div>
+    </div>
+    <p class="disclaimer">Appen ger vägledning, inte juridisk rådgivning. Kontrollera alltid uppgifterna mot ditt registreringsbevis och Transportstyrelsen vid tveksamhet.</p>
+
+    <h2>Vanliga frågor</h2>
+    <h3>Varför kostar “Via regnr”?</h3>
+    <p class="muted">Vikterna hämtas från tjänsten <a href="https://biluppgifter.se" rel="noopener">Biluppgifter.se</a>, som tar betalt per anrop. Köpet i appen täcker den kostnaden. Fliken <strong>Manuellt</strong> är alltid gratis.</p>
+    <h3>Appen hittar inte vikterna eller visar fel</h3>
+    <p class="muted">Kontrollera att båda registreringsnumren är korrekt inskrivna. Uppgifterna kommer från Biluppgifter.se – saknas ett fordon där kan appen inte hämta vikterna.</p>
+    <h3>Är mina uppgifter säkra?</h3>
+    <p class="muted">Ja. Appen visar ingen reklam och spårar dig inte. Läs mer i <a href="SlapvagnskollenPrivacyPolicy.html">integritetspolicyn</a>.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Kontakta oss</h2>
+      <p class="muted" style="margin:0">Har du en fråga, ett förslag eller stöter på problem? Mejla utvecklaren Sebastian Bolling på <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a> – all feedback uppskattas!</p>
+    </div>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>We're happy to help</h1>
+    <p class="lead">We want you to get the most out of Släpvagnskollen. If you get stuck or have a question, we're here to help.</p>
+
+    <h2>How the app works</h2>
+    <ul>
+      <li><strong>Manual:</strong> enter the four weights from your registration documents and tap <em>Beräkna behörighet</em> (Calculate).</li>
+      <li><strong>By reg number:</strong> let the app look the weights up automatically from the registration numbers. This requires an in-app purchase because the data source charges per lookup.</li>
+      <li><strong>Result:</strong> you see the required licence and a combined-weight bar. You can share or save the search.</li>
+      <li><strong>History &amp; theme:</strong> saved searches live under Sökhistorik, and you can switch between light, dark and automatic themes.</li>
+    </ul>
+
+    <h2>Which licence is required?</h2>
+    <div class="rows">
+      <div class="row"><span class="badge b">B</span><span>Combined weight up to 3 500 kg (also a trailer with a gross weight of 750 kg or less).</span></div>
+      <div class="row"><span class="badge b96">B96</span><span>Combined weight 3 500–4 250 kg.</span></div>
+      <div class="row"><span class="badge be">BE</span><span>Combined weight over 4 250 kg.</span></div>
+    </div>
+    <p class="disclaimer">The app provides guidance, not legal advice. Always verify against your registration documents and the Swedish Transport Agency (Transportstyrelsen) if in doubt.</p>
+
+    <h2>FAQ</h2>
+    <h3>Why does “Via regnr” cost money?</h3>
+    <p class="muted">The weights are fetched from <a href="https://biluppgifter.se" rel="noopener">Biluppgifter.se</a>, which charges per lookup. The in-app purchase covers that cost. The <strong>Manuellt</strong> (Manual) tab is always free.</p>
+    <h3>The app can't find the weights or shows the wrong result</h3>
+    <p class="muted">Check that both registration numbers are entered correctly. The data comes from Biluppgifter.se – if a vehicle isn't listed there, the app can't fetch its weights.</p>
+    <h3>Is my data safe?</h3>
+    <p class="muted">Yes. The app shows no ads and does not track you. Read more in the <a href="SlapvagnskollenPrivacyPolicy.html">privacy policy</a>.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Contact us</h2>
+      <p class="muted" style="margin:0">Have a question, a suggestion or run into a problem? Email the developer, Sebastian Bolling, at <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a> – all feedback is appreciated!</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Sebastian Bolling · Släpvagnskollen</footer>
+</div>
+
+<script>
+  (function(){
+    var html=document.documentElement;
+    var btns=document.querySelectorAll('.toggle button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var lang=b.getAttribute('data-set');
+        html.setAttribute('data-lang',lang);
+        html.setAttribute('lang',lang);
+        btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+      });
+    });
+  })();
+</script>
+</body>
+</html>
