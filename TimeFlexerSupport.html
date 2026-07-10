@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · TimeFlexer</title>
+<meta name="description" content="Support and help for the TimeFlexer / Flextidskollen app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F2EC; --card:#FFFFFF; --ink:#182029; --muted:#77808F; --line:#E9E7DF;
+    --chip:#EDEBE3; --accent:#0B8F63; --accent-bg:#DCF2E9; --accent-ink:#FFFFFF;
+    --radius:22px; --radius-sm:18px;
+    --shadow:0 1px 2px rgba(24,32,41,.06), 0 10px 30px rgba(24,32,41,.07);
+    --display:"Space Grotesk",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --ui:"Plus Jakarta Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0C1122; --card:#181F38; --ink:#EAEEF7; --muted:#8B93AD; --line:#26304F;
+      --chip:#232C4C; --accent:#35D8A2; --accent-bg:rgba(53,216,162,.15); --accent-ink:#06231A;
+      --shadow:0 10px 34px rgba(0,0,0,.4);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--ui); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:32px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent-bg);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;}
+  .tile svg{width:24px; height:24px; stroke:var(--accent); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round;}
+  .brand-name{font-family:var(--display); font-weight:600; font-size:17px; letter-spacing:-.01em;}
+  .eyebrow{font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
+  h1{font-family:var(--display); font-weight:700; font-size:34px; line-height:1.08; letter-spacing:-.02em; margin:0 0 12px;}
+  h2{font-family:var(--display); font-weight:600; font-size:21px; line-height:1.2; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:18px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:8px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  .btn{display:inline-block; margin-top:6px; background:var(--accent); color:var(--accent-ink); font-family:var(--ui); font-weight:600; font-size:15px; padding:12px 22px; border-radius:999px; text-decoration:none;}
+  .btn:hover{text-decoration:none; opacity:.92;}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--chip); border-radius:999px; padding:4px;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--ui); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+      </span>
+      <span class="brand-name">TimeFlexer</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>Help with TimeFlexer</h1>
+    <p class="lead">TimeFlexer keeps a running balance of the minutes you've worked over or under your standard hours. Here's how to get the most out of it — and how to reach us if you need a hand.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li><strong>Log a day.</strong> Tap any day in the calendar, then use the − / + buttons or a quick-set chip to set how far over or under you were. Tap <strong>Save entry</strong>.</li>
+      <li><strong>See your month.</strong> The card at the top shows this month's total and how many days you've logged.</li>
+      <li><strong>See your year.</strong> The <strong>Year</strong> tab shows your net balance carried forward, a monthly chart, and every month's total.</li>
+      <li><strong>Make it yours.</strong> In <strong>Settings</strong> you can switch between Light, Dark and Auto themes, start the week on Monday, and show your balance in hours or minutes.</li>
+    </ul>
+
+    <h2>Free version &amp; upgrading</h2>
+    <p>The free version lets you log up to 8 flex entries so you can try it out. Upgrading to the full version — a one-time purchase — unlocks unlimited entries forever. Bought it before or on a new device? Tap <strong>Restore purchases</strong> in Settings.</p>
+
+    <h2>Your data</h2>
+    <p>Everything you log is stored privately on your device. See the <a href="TimeFlexerPrivacyPolicy.html">privacy policy</a> for details.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Still need help?</h2>
+      <p class="muted">Have a question, found a bug, or have an idea to make TimeFlexer better? The developer, Sebastian Bolling, is happy to help — your feedback is always appreciated.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=TimeFlexer%20support">Email support</a>
+    </div>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Hjälp med Flextidskollen</h1>
+    <p class="lead">Flextidskollen håller reda på hur många minuter du jobbat över eller under din ordinarie arbetstid. Så här får du ut mesta möjliga av appen — och så här når du oss om du behöver hjälp.</p>
+
+    <h2>Kom igång</h2>
+    <ul>
+      <li><strong>Logga en dag.</strong> Tryck på en dag i kalendern och använd − / +-knapparna eller ett snabbval för att ställa in hur mycket över eller under du var. Tryck på <strong>Spara</strong>.</li>
+      <li><strong>Se din månad.</strong> Kortet högst upp visar månadens totala saldo och hur många dagar du loggat.</li>
+      <li><strong>Se ditt år.</strong> Fliken <strong>År</strong> visar ditt nettosaldo som förs vidare, ett månadsdiagram och varje månads total.</li>
+      <li><strong>Gör den till din.</strong> I <strong>Inställningar</strong> kan du växla mellan Ljust, Mörkt och Auto, börja veckan på måndag och visa saldot i timmar eller minuter.</li>
+    </ul>
+
+    <h2>Gratisversion &amp; uppgradering</h2>
+    <p>I gratisversionen kan du logga upp till 8 flextider för att testa appen. Uppgraderar du till fullversionen — ett engångsköp — låser du upp obegränsat med tider för alltid. Har du köpt tidigare eller bytt enhet? Tryck på <strong>Återställ köp</strong> i Inställningar.</p>
+
+    <h2>Dina uppgifter</h2>
+    <p>Allt du loggar lagras privat på din enhet. Se <a href="TimeFlexerPrivacyPolicy.html">integritetspolicyn</a> för detaljer.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Behöver du fortfarande hjälp?</h2>
+      <p class="muted">Har du en fråga, hittat en bugg eller en idé som gör Flextidskollen bättre? Utvecklaren Sebastian Bolling hjälper gärna till — din feedback uppskattas alltid.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=Flextidskollen%20support">Mejla supporten</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Sebastian Bolling · TimeFlexer</footer>
+</div>
+
+<script>
+  (function(){
+    var html=document.documentElement;
+    var btns=document.querySelectorAll('.toggle button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var lang=b.getAttribute('data-set');
+        html.setAttribute('data-lang',lang);
+        html.setAttribute('lang',lang);
+        btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+      });
+    });
+  })();
+</script>
+</body>
+</html>
