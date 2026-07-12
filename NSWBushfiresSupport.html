@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Bushfires in New South Wales</title>
+<meta name="description" content="Support and help for the Bushfires in New South Wales app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F2EC; --card:#FFFFFF; --ink:#182029; --muted:#77808F; --line:#E9E7DF;
+    --chip:#EDEBE3; --accent:#C1431C; --accent-bg:#FBE7DC; --accent-ink:#FFFFFF;
+    --radius:22px; --radius-sm:18px;
+    --shadow:0 1px 2px rgba(24,32,41,.06), 0 10px 30px rgba(24,32,41,.07);
+    --display:"Space Grotesk",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --ui:"Plus Jakarta Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0C1122; --card:#181F38; --ink:#EAEEF7; --muted:#8B93AD; --line:#26304F;
+      --chip:#232C4C; --accent:#FF9A5A; --accent-bg:rgba(255,154,90,.15); --accent-ink:#2A1206;
+      --shadow:0 10px 34px rgba(0,0,0,.4);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--ui); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:32px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent-bg);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;}
+  .tile svg{width:24px; height:24px; stroke:var(--accent); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round;}
+  .brand-name{font-family:var(--display); font-weight:600; font-size:17px; letter-spacing:-.01em;}
+  .eyebrow{font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
+  h1{font-family:var(--display); font-weight:700; font-size:34px; line-height:1.08; letter-spacing:-.02em; margin:0 0 12px;}
+  h2{font-family:var(--display); font-weight:600; font-size:21px; line-height:1.2; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:18px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:8px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  .btn{display:inline-block; margin-top:6px; background:var(--accent); color:var(--accent-ink); font-family:var(--ui); font-weight:600; font-size:15px; padding:12px 22px; border-radius:999px; text-decoration:none;}
+  .btn:hover{text-decoration:none; opacity:.92;}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--chip); border-radius:999px; padding:4px;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--ui); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2.7c.5 3 2.4 4.7 3.7 6.4 1.1 1.4 1.8 2.9 1.8 4.7a5.5 5.5 0 1 1-11 0c0-1.3.4-2.4 1.1-3.4.3 1.1 1 1.8 1.9 2C8.9 8.8 10.2 5.9 12 2.7Z"/></svg>
+      </span>
+      <span class="brand-name">Bushfires in New South Wales</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>Help with Bushfires in New South Wales</h1>
+    <p class="lead">This app plots current bushfire incidents from the NSW Rural Fire Service on a map so you can see, at a glance, what's happening near you. Here's how to use it — and how to reach us.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li><strong>See the fires.</strong> The map shows current incidents across NSW. Each fire's icon is colour-coded by its alert level (see below).</li>
+      <li><strong>Tap a fire.</strong> Tap any fire to see its details — alert level, location and status — with a button to open directions. Major incidents also show the fire-ground boundary as a shaded area.</li>
+      <li><strong>Find a place.</strong> Use the search button to jump to any address in NSW.</li>
+      <li><strong>What the colours mean.</strong> Tap the info/legend button to see the alert-level key.</li>
+      <li><strong>Optional AI summary.</strong> On the newest devices (with Apple Intelligence), the app can show a short summary of the nearest alert and simplify each fire's details. You can turn these on or off in <strong>Settings</strong>.</li>
+    </ul>
+
+    <h2>What the alert levels mean</h2>
+    <ul>
+      <li><strong>Emergency Warning</strong> (red) — you may be in danger and need to act immediately.</li>
+      <li><strong>Watch and Act</strong> (orange) — conditions are changing; you need to start taking action.</li>
+      <li><strong>Advice</strong> (yellow) — a fire has started; stay up to date in case the situation changes.</li>
+      <li><strong>No alert level</strong> (blue) — incidents with no current alert level, such as planned (hazard-reduction) burns and contained incidents.</li>
+    </ul>
+
+    <h2>Supporting the app</h2>
+    <p>The app is free. If it has helped you, you can leave a one-time tip from the menu. Bought a tip before, or on a new device? Tap <strong>Restore purchases</strong>.</p>
+
+    <h2>Data &amp; accuracy</h2>
+    <p>Bushfire information comes from the public NSW Rural Fire Service feed and may be delayed or incomplete. This app is independent and is not affiliated with the NSW RFS. <strong>In an emergency, always follow official NSW RFS and emergency-services advice, and call Triple Zero (000) if you or your property are under threat.</strong> See the <a href="NSWBushfiresPrivacyPolicy.html">privacy policy</a> for how your data is handled.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Still need help?</h2>
+      <p class="muted">Have a question, found a bug, or have an idea to make the app better? The developer, Sebastian Bolling, is happy to help — your feedback is always appreciated.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=Bushfires%20in%20New%20South%20Wales%20support">Email support</a>
+    </div>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Hjälp med Skogsbränder i New South Wales</h1>
+    <p class="lead">Appen visar aktuella skogsbränder från NSW Rural Fire Service på en karta så att du snabbt ser vad som händer nära dig. Så här använder du den — och så här når du oss.</p>
+
+    <h2>Kom igång</h2>
+    <ul>
+      <li><strong>Se bränderna.</strong> Kartan visar aktuella händelser i hela NSW. Varje brands ikon är färgkodad efter varningsnivå (se nedan).</li>
+      <li><strong>Tryck på en brand.</strong> Tryck på en brand för att se detaljer — varningsnivå, plats och status — med en knapp för vägbeskrivning. Större händelser visar även brandområdets gräns som ett skuggat område.</li>
+      <li><strong>Hitta en plats.</strong> Använd sökknappen för att hoppa till valfri adress i NSW.</li>
+      <li><strong>Vad färgerna betyder.</strong> Tryck på info-/teckenförklaringsknappen för att se nyckeln till varningsnivåerna.</li>
+      <li><strong>Valfri AI-sammanfattning.</strong> På de nyaste enheterna (med Apple Intelligence) kan appen visa en kort sammanfattning av närmaste varning och förenkla varje brands detaljer. Du kan slå på eller av detta i <strong>Inställningar</strong>.</li>
+    </ul>
+
+    <h2>Vad varningsnivåerna betyder</h2>
+    <ul>
+      <li><strong>Emergency Warning</strong> (röd) — du kan vara i fara och måste agera omedelbart.</li>
+      <li><strong>Watch and Act</strong> (orange) — förhållandena förändras; du behöver börja agera.</li>
+      <li><strong>Advice</strong> (gul) — en brand har startat; håll dig uppdaterad om läget ändras.</li>
+      <li><strong>Ingen varningsnivå</strong> (blå) — händelser utan aktuell varningsnivå, t.ex. planerade (riskreducerande) bränder och begränsade händelser.</li>
+    </ul>
+
+    <h2>Stöd appen</h2>
+    <p>Appen är gratis. Om den har hjälpt dig kan du ge dricks en gång via menyn. Har du gett dricks tidigare eller bytt enhet? Tryck på <strong>Återställ köp</strong>.</p>
+
+    <h2>Data &amp; tillförlitlighet</h2>
+    <p>Informationen kommer från NSW Rural Fire Services offentliga flöde och kan vara försenad eller ofullständig. Appen är fristående och inte kopplad till NSW RFS. <strong>Följ alltid officiella råd från NSW RFS och räddningstjänsten i en nödsituation, och ring Triple Zero (000) om du eller din egendom hotas.</strong> Se <a href="NSWBushfiresPrivacyPolicy.html">integritetspolicyn</a> för hur dina uppgifter hanteras.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Behöver du fortfarande hjälp?</h2>
+      <p class="muted">Har du en fråga, hittat en bugg eller en idé som gör appen bättre? Utvecklaren Sebastian Bolling hjälper gärna till — din feedback uppskattas alltid.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=Skogsbr%C3%A4nder%20i%20New%20South%20Wales%20support">Mejla supporten</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Sebastian Bolling · Bushfires in New South Wales</footer>
+</div>
+
+<script>
+  (function(){
+    var html=document.documentElement;
+    var btns=document.querySelectorAll('.toggle button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var lang=b.getAttribute('data-set');
+        html.setAttribute('data-lang',lang);
+        html.setAttribute('lang',lang);
+        btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+      });
+    });
+  })();
+</script>
+</body>
+</html>
