@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · How old is something</title>
+<meta name="description" content="Support and help for the How old is something / Hur gammal app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFF3F8; --card:#FFFFFF; --ink:#1A2430; --muted:#71808F; --line:#DFE6EE;
+    --chip:#E4EBF3; --accent:#3E76AB; --accent-bg:#E0EBF5; --accent-ink:#FFFFFF;
+    --radius:22px; --radius-sm:18px;
+    --shadow:0 1px 2px rgba(26,36,48,.06), 0 10px 30px rgba(26,36,48,.07);
+    --display:"Space Grotesk",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --ui:"Plus Jakarta Sans",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0D1420; --card:#182234; --ink:#EAF0F7; --muted:#8C99AB; --line:#263449;
+      --chip:#223047; --accent:#8FBEE8; --accent-bg:rgba(143,190,232,.16); --accent-ink:#0B1B2A;
+      --shadow:0 10px 34px rgba(0,0,0,.4);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--ui); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:32px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent-bg);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;}
+  .tile svg{width:24px; height:24px; stroke:var(--accent); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round;}
+  .brand-name{font-family:var(--display); font-weight:600; font-size:17px; letter-spacing:-.01em;}
+  .eyebrow{font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
+  h1{font-family:var(--display); font-weight:700; font-size:34px; line-height:1.08; letter-spacing:-.02em; margin:0 0 12px;}
+  h2{font-family:var(--display); font-weight:600; font-size:21px; line-height:1.2; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:18px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:7px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  .btn{display:inline-block; margin-top:6px; background:var(--accent); color:var(--accent-ink); font-family:var(--ui); font-weight:600; font-size:15px; padding:12px 22px; border-radius:999px; text-decoration:none;}
+  .btn:hover{text-decoration:none; opacity:.92;}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--chip); border-radius:999px; padding:4px;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--ui); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 3c3.3 0 6 2.7 6 6 0 3.6-2.9 6.5-6 6.5S6 12.6 6 9c0-3.3 2.7-6 6-6z"/><path d="M11 15.5l1 2 1-2"/><path d="M12 17.5c0 2-2 2.5-2 4.5"/></svg>
+      </span>
+      <span class="brand-name">How old is something</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>Help with How old is something</h1>
+    <p class="lead">How old is something always knows the age of your kids, pets, gadgets — anything — in years, months and days. Here's how to get the most out of it, and how to reach us if you need a hand.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li><strong>Add a something.</strong> Tap the <strong>Add</strong> button, give it a name and set the date it arrived.</li>
+      <li><strong>Add a picture.</strong> Tap the image to take a new photo or pick one from your library — your somethings look much better with one!</li>
+      <li><strong>Add a yearly phase (optional).</strong> Something recurring that started on a certain date, like "Elementary school", gets its own counter that ticks up every year.</li>
+      <li><strong>Get a yearly reminder.</strong> Flip <strong>Remind me every year</strong> and the app sends you a notification on the day it arrived, every year at 9 in the morning.</li>
+    </ul>
+
+    <h2>Your list</h2>
+    <ul>
+      <li><strong>Edit.</strong> Tap a something to change its name, date, picture or phase.</li>
+      <li><strong>Reorder or delete.</strong> Tap <strong>Edit</strong> to drag somethings into a new order, or swipe a row to delete it.</li>
+    </ul>
+
+    <h2>Widgets &amp; Apple Watch</h2>
+    <p>Add the widget to your home screen to see the ages at a glance — no need to open the app. Your somethings also show up automatically in the Apple Watch app on a paired watch.</p>
+
+    <h2>Reminders not showing?</h2>
+    <p>Yearly reminders need the iOS notification permission. If you said no the first time, open <strong>Settings → Notifications</strong>, choose the app and allow notifications, then return to the app — it takes care of the rest.</p>
+
+    <h2>Free version &amp; upgrading</h2>
+    <p>The free version lets you add one something so you can try it out. Upgrading — a small one-time purchase — unlocks unlimited somethings forever. Bought it before or on a new device? Tap the <strong>Restore Purchase</strong> button on the main screen.</p>
+
+    <h2>Your data</h2>
+    <p>Everything you add is stored privately on your device. See the <a href="HowOldIsSomethingPrivacyPolicy.html">privacy policy</a> for details.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Still need help?</h2>
+      <p class="muted">Have a question, found a bug, or have an idea to make the app better? The developer, Sebastian Bolling, is happy to help — your feedback is always appreciated.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=How%20old%20is%20something%20support">Email support</a>
+    </div>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Hjälp med Hur gammal</h1>
+    <p class="lead">Hur gammal vet alltid åldern på dina barn, husdjur, prylar — vad som helst — i år, månader och dagar. Så här får du ut mesta möjliga av appen, och så här når du oss om du behöver hjälp.</p>
+
+    <h2>Kom igång</h2>
+    <ul>
+      <li><strong>Lägg till något.</strong> Tryck på <strong>Lägg till</strong>, ge det ett namn och ange datumet det dök upp.</li>
+      <li><strong>Lägg till en bild.</strong> Tryck på bilden för att ta ett nytt foto eller välja ett ur ditt bibliotek — dina saker ser mycket bättre ut med bild!</li>
+      <li><strong>Lägg till en årlig händelse (frivilligt).</strong> Något återkommande som började ett visst datum, som "Grundskolan", får en egen räknare som räknas upp varje år.</li>
+      <li><strong>Få en årlig påminnelse.</strong> Slå på <strong>Påminn mig varje år</strong> så skickar appen en notis på dagen det dök upp, varje år klockan 9 på morgonen.</li>
+    </ul>
+
+    <h2>Din lista</h2>
+    <ul>
+      <li><strong>Ändra.</strong> Tryck på något för att ändra namn, datum, bild eller händelse.</li>
+      <li><strong>Ändra ordning eller ta bort.</strong> Tryck på <strong>Ändra</strong> för att ändra ordningen genom att dra sakerna, eller svep på en rad för att ta bort den.</li>
+    </ul>
+
+    <h2>Widgetar &amp; Apple Watch</h2>
+    <p>Lägg till widgeten på hemskärmen så ser du åldrarna direkt — utan att öppna appen. Dina saker dyker också upp automatiskt i Apple Watch-appen på en parkopplad klocka.</p>
+
+    <h2>Visas inga påminnelser?</h2>
+    <p>Årliga påminnelser kräver notisbehörighet i iOS. Om du svarade nej första gången, öppna <strong>Inställningar → Notiser</strong>, välj appen och tillåt notiser och gå sedan tillbaka till appen — den sköter resten.</p>
+
+    <h2>Gratisversion &amp; uppgradering</h2>
+    <p>I gratisversionen kan du lägga till en sak för att testa appen. Uppgraderingen — ett litet engångsköp — låser upp obegränsat antal saker för alltid. Har du köpt tidigare eller bytt enhet? Tryck på <strong>Återställ köp</strong> på huvudskärmen.</p>
+
+    <h2>Dina uppgifter</h2>
+    <p>Allt du lägger till lagras privat på din enhet. Se <a href="HowOldIsSomethingPrivacyPolicy.html">integritetspolicyn</a> för detaljer.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Behöver du fortfarande hjälp?</h2>
+      <p class="muted">Har du en fråga, har du hittat en bugg eller har du en idé som kan göra appen bättre? Utvecklaren Sebastian Bolling hjälper gärna till — din feedback uppskattas alltid.</p>
+      <a class="btn" href="mailto:sebastian.bolling@gmail.com?subject=Hur%20gammal%20support">Mejla supporten</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Sebastian Bolling · How old is something</footer>
+</div>
+
+<script>
+  (function(){
+    var html=document.documentElement;
+    var btns=document.querySelectorAll('.toggle button');
+    btns.forEach(function(b){
+      b.addEventListener('click',function(){
+        var lang=b.getAttribute('data-set');
+        html.setAttribute('data-lang',lang);
+        html.setAttribute('lang',lang);
+        btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
+      });
+    });
+  })();
+</script>
+</body>
+</html>
