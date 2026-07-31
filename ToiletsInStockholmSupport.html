@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Toilets in Stockholm</title>
+<meta name="description" content="Support and FAQ for the Toilets in Stockholm / Toaletter i Stockholm app.">
+<style>
+  :root{
+    --bg:#F2F2F5; --card:#FFFFFF; --tile:rgba(0,0,0,.035); --ink:#111114; --muted:#6E6E76;
+    --line:rgba(0,0,0,.09); --accent:#0FA37A; --on-accent:#FFFFFF; --alert:#D83A3A;
+    --radius:26px; --radius-sm:16px;
+    --shadow:0 10px 28px rgba(0,0,0,.14);
+    --serif:ui-serif,"New York",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B0B0D; --card:#1C1C21; --tile:rgba(255,255,255,.06); --ink:#F5F5F7; --muted:#8E8E96;
+      --line:rgba(255,255,255,.10); --accent:#2FE0A8; --on-accent:#04241A; --alert:#FF6B6B;
+      --shadow:0 10px 30px rgba(0,0,0,.55);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--sans); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:36px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+    color:var(--on-accent); font-weight:700; font-size:15px; letter-spacing:.02em;}
+  .brand-name{font-family:var(--serif); font-weight:600; font-size:18px; letter-spacing:-.015em;}
+  .eyebrow{font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 10px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:36px; line-height:1.05; letter-spacing:-.015em; margin:0 0 12px;}
+  h2{font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.15; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:17px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:7px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  .cta{display:inline-block; background:var(--accent); color:var(--on-accent); font-weight:600;
+    padding:13px 22px; border-radius:16px; margin-top:6px;}
+  .cta:hover{text-decoration:none; opacity:.92;}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--card); border-radius:999px; padding:4px; border:1px solid var(--line);}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--sans); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--on-accent);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">WC</span>
+      <span class="brand-name lang-en" style="display:inline">Toilets in Stockholm</span>
+      <span class="brand-name lang-sv" style="display:none">Toaletter i Stockholm</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>Need a hand?</h1>
+    <p class="lead">Toilets in Stockholm shows the city's public toilets on a map, sorts them by walking distance and walks you there. If something isn't working, the answers below cover the usual suspects — and email always works.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Contact:</strong> <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a><br>
+      <span class="muted">Include your iOS version and what you tapped when things went sideways — it makes fixes much faster.</span></p>
+    </div>
+
+    <h2>Where does the toilet data come from?</h2>
+    <p>Locations come straight from the City of Stockholm's open data and refresh every time you open the app. Opening hours, fees and accessibility are not part of the city's feed, so the app bundles the best publicly available information — when something isn't known for sure, the app says so ("Fee may apply") or leaves it out rather than guessing.</p>
+
+    <h2>A toilet is missing, closed or wrong</h2>
+    <p>The city is replacing many public toilets during 2026–27, so the map can temporarily disagree with the street. The app can only be as right as the city's data — but email me anyway; if the data source has an issue I want to know.</p>
+
+    <h2>The app can't find my position</h2>
+    <ul>
+      <li>Check <strong>Settings → Privacy &amp; Security → Location Services</strong> and make sure Toilets in Stockholm is allowed "While Using the App".</li>
+      <li>Without location access the map and list still work — you just won't get distances or directions.</li>
+    </ul>
+
+    <h2>Directions look odd</h2>
+    <p>Walking routes and travel times come from Apple Maps. If a route looks wrong, it usually looks wrong in Apple Maps too — reporting it there fixes it for everyone.</p>
+
+    <h2>Filters show nothing</h2>
+    <p>The <em>Open now</em>, <em>Accessible</em> and <em>Free</em> filters only show toilets the app is confident about. If a filter empties the map, clear it with <em>Reset</em> in the filter sheet.</p>
+
+    <h2>About tips</h2>
+    <p>The app is free and always will be. Tips are one-off purchases handled by Apple — they unlock nothing and are not restorable, they're just appreciated. Billing questions are best handled by <a href="https://support.apple.com/billing">Apple Support</a>.</p>
+
+    <p style="margin-top:30px"><a class="cta" href="mailto:sebastian.bolling@gmail.com">Email support</a></p>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Behöver du hjälp?</h1>
+    <p class="lead">Toaletter i Stockholm visar stadens offentliga toaletter på en karta, sorterar dem efter gångavstånd och tar dig dit. Om något krånglar hittar du de vanligaste svaren här — och mejl funkar alltid.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Kontakt:</strong> <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a><br>
+      <span class="muted">Skriv gärna din iOS-version och vad du tryckte på när det strulade — då går det mycket fortare att fixa.</span></p>
+    </div>
+
+    <h2>Varifrån kommer toalettdatan?</h2>
+    <p>Positionerna kommer direkt från Stockholms stads öppna data och uppdateras varje gång du öppnar appen. Öppettider, avgifter och tillgänglighet ingår inte i stadens data, så appen använder bästa tillgängliga offentliga information — och när något inte är säkert säger appen det ("Ev. avgift") eller utelämnar det hellre än gissar.</p>
+
+    <h2>En toalett saknas, är stängd eller fel</h2>
+    <p>Staden byter ut många offentliga toaletter under 2026–27, så kartan kan tillfälligt skilja sig från verkligheten. Appen kan bara vara så rätt som stadens data — men mejla gärna ändå; om datakällan har problem vill jag veta det.</p>
+
+    <h2>Appen hittar inte min position</h2>
+    <ul>
+      <li>Kontrollera <strong>Inställningar → Integritet och säkerhet → Platstjänster</strong> och se till att Toaletter i Stockholm har "Vid användning av appen".</li>
+      <li>Utan platsbehörighet fungerar kartan och listan ändå — du får bara inga avstånd eller vägbeskrivningar.</li>
+    </ul>
+
+    <h2>Vägbeskrivningen ser konstig ut</h2>
+    <p>Gångrutter och restider kommer från Apple Maps. Ser en rutt fel ut brukar den se fel ut även i Apple Maps — rapportera den där så blir det rätt för alla.</p>
+
+    <h2>Filtren visar ingenting</h2>
+    <p>Filtren <em>Öppen nu</em>, <em>Tillgänglig</em> och <em>Gratis</em> visar bara toaletter appen är säker på. Om ett filter tömmer kartan, rensa med <em>Rensa</em> i filterarket.</p>
+
+    <h2>Om dricks</h2>
+    <p>Appen är gratis och kommer alltid att vara det. Dricks är engångsköp som hanteras av Apple — de låser inte upp något och kan inte återställas, de är bara uppskattade. Betalningsfrågor hanteras bäst av <a href="https://support.apple.com/sv-se/billing">Apples support</a>.</p>
+
+    <p style="margin-top:30px"><a class="cta" href="mailto:sebastian.bolling@gmail.com">Mejla supporten</a></p>
+  </section>
+
+  <footer>
+    <span class="lang-en" style="display:inline">© 2026 Sebastian Bolling · <a href="ToiletsInStockholmPrivacyPolicy.html">Privacy Policy</a></span>
+    <span class="lang-sv" style="display:none">© 2026 Sebastian Bolling · <a href="ToiletsInStockholmPrivacyPolicy.html">Integritetspolicy</a></span>
+  </footer>
+</div>
+
+<script>
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll('.toggle button');
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
+    document.querySelectorAll('.brand-name, footer span').forEach(el => {
+      const isSv = el.classList.contains('lang-sv');
+      el.style.display = (isSv === (lang === 'sv')) ? 'inline' : 'none';
+    });
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  if ((navigator.language || '').toLowerCase().startsWith('sv')) setLang('sv');
+</script>
+</body>
+</html>

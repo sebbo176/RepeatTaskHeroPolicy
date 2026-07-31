@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Toilets in Stockholm</title>
+<meta name="description" content="Privacy policy for the Toilets in Stockholm / Toaletter i Stockholm app.">
+<style>
+  :root{
+    --bg:#F2F2F5; --card:#FFFFFF; --tile:rgba(0,0,0,.035); --ink:#111114; --muted:#6E6E76;
+    --line:rgba(0,0,0,.09); --accent:#0FA37A; --on-accent:#FFFFFF; --alert:#D83A3A;
+    --radius:26px; --radius-sm:16px;
+    --shadow:0 10px 28px rgba(0,0,0,.14);
+    --serif:ui-serif,"New York",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B0B0D; --card:#1C1C21; --tile:rgba(255,255,255,.06); --ink:#F5F5F7; --muted:#8E8E96;
+      --line:rgba(255,255,255,.10); --accent:#2FE0A8; --on-accent:#04241A; --alert:#FF6B6B;
+      --shadow:0 10px 30px rgba(0,0,0,.55);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--sans); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:36px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+    color:var(--on-accent); font-weight:700; font-size:15px; letter-spacing:.02em;}
+  .brand-name{font-family:var(--serif); font-weight:600; font-size:18px; letter-spacing:-.015em;}
+  .eyebrow{font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 10px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:36px; line-height:1.05; letter-spacing:-.015em; margin:0 0 12px;}
+  h2{font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.15; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:17px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:7px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .updated{color:var(--muted); font-size:14px; margin:0 0 8px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--card); border-radius:999px; padding:4px; border:1px solid var(--line);}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--sans); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--on-accent);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">WC</span>
+      <span class="brand-name lang-en" style="display:inline">Toilets in Stockholm</span>
+      <span class="brand-name lang-sv" style="display:none">Toaletter i Stockholm</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Your business is your business.</h1>
+    <p class="updated">Last updated: 31 July 2026</p>
+    <p class="lead">Toilets in Stockholm helps you find the nearest public toilet. It has no accounts, no ads, no analytics and no tracking — and it works hard to keep it that way.</p>
+
+    <h2>What the app collects</h2>
+    <p>Nothing. The app has no user accounts, does not use analytics or advertising SDKs, and never sends your personal data to us. We do not have a server that receives anything about you.</p>
+
+    <h2>Your location</h2>
+    <p>The app asks for location permission so it can show where you are on the map, sort toilets by walking distance and give you walking directions. Your location is used on your device only — it is never stored by the app and never sent to us. If you deny the permission the app still works; it just can't sort by distance.</p>
+
+    <h2>Services the app talks to</h2>
+    <ul>
+      <li><strong>Stockholm's open data API</strong> — the toilet locations come from the City of Stockholm's public data feed. Requests contain no personal information beyond what any web request carries (such as your IP address, handled per the city's own policies).</li>
+      <li><strong>Apple Maps</strong> — the map, address search and walking directions are provided by Apple's MapKit. Those requests are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+      <li><strong>Apple In-App Purchase</strong> — optional tips are processed entirely by Apple. We never see your payment details.</li>
+    </ul>
+
+    <h2>What stays on your device</h2>
+    <p>Your recent searches, filter choices and a small counter that decides when the app may show its one donation nudge are stored locally on your device and go away if you delete the app.</p>
+
+    <h2>Children</h2>
+    <p>The app collects no data from anyone, including children.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy ever changes, the updated version will be published at this address with a new date at the top.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Questions?</strong> Email <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a> — happy to help.</p>
+    </div>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Integritetspolicy</p>
+    <h1>Dina behov är din ensak.</h1>
+    <p class="updated">Senast uppdaterad: 31 juli 2026</p>
+    <p class="lead">Toaletter i Stockholm hjälper dig hitta närmaste offentliga toalett. Appen har inga konton, ingen reklam, ingen analys och ingen spårning — och så ska det förbli.</p>
+
+    <h2>Vad appen samlar in</h2>
+    <p>Ingenting. Appen har inga användarkonton, använder inga analys- eller reklamverktyg och skickar aldrig dina personuppgifter till oss. Vi har ingen server som tar emot något om dig.</p>
+
+    <h2>Din plats</h2>
+    <p>Appen ber om platsbehörighet för att kunna visa var du är på kartan, sortera toaletter efter gångavstånd och ge dig vägbeskrivningar. Din plats används bara på din enhet — den sparas aldrig av appen och skickas aldrig till oss. Nekar du behörigheten fungerar appen ändå, den kan bara inte sortera efter avstånd.</p>
+
+    <h2>Tjänster appen pratar med</h2>
+    <ul>
+      <li><strong>Stockholms stads öppna data</strong> — toaletternas positioner kommer från stadens publika datakälla. Anropen innehåller ingen personlig information utöver det varje webbanrop bär med sig (t.ex. din IP-adress, som hanteras enligt stadens egna policyer).</li>
+      <li><strong>Apple Maps</strong> — kartan, adressökningen och vägbeskrivningarna kommer från Apples MapKit. De anropen hanteras av Apple enligt <a href="https://www.apple.com/legal/privacy/">Apples integritetspolicy</a>.</li>
+      <li><strong>Apples köp i appen</strong> — frivillig dricks hanteras helt av Apple. Vi ser aldrig dina betalningsuppgifter.</li>
+    </ul>
+
+    <h2>Vad som stannar på din enhet</h2>
+    <p>Dina senaste sökningar, filterval och en liten räknare som avgör när appen får visa sin enda donationspåminnelse sparas lokalt på din enhet och försvinner om du raderar appen.</p>
+
+    <h2>Barn</h2>
+    <p>Appen samlar inte in data från någon, inklusive barn.</p>
+
+    <h2>Ändringar</h2>
+    <p>Om policyn någon gång ändras publiceras den uppdaterade versionen på den här adressen med nytt datum överst.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Frågor?</strong> Mejla <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a> — jag hjälper gärna till.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span class="lang-en" style="display:inline">© 2026 Sebastian Bolling · <a href="ToiletsInStockholmSupport.html">Support</a></span>
+    <span class="lang-sv" style="display:none">© 2026 Sebastian Bolling · <a href="ToiletsInStockholmSupport.html">Support</a></span>
+  </footer>
+</div>
+
+<script>
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll('.toggle button');
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
+    document.querySelectorAll('.brand-name, footer span').forEach(el => {
+      const isSv = el.classList.contains('lang-sv');
+      el.style.display = (isSv === (lang === 'sv')) ? 'inline' : 'none';
+    });
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  if ((navigator.language || '').toLowerCase().startsWith('sv')) setLang('sv');
+</script>
+</body>
+</html>
