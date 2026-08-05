@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Pet Cats to Space</title>
+<meta name="description" content="Support and help for the Pet Cats to Space / Klappa katter till rymden game.">
+<style>
+  :root{
+    --bg:#F2F2F5; --card:#FFFFFF; --tile:rgba(0,0,0,.035); --ink:#111114; --muted:#6E6E76;
+    --line:rgba(0,0,0,.09); --accent:#D6336C; --on-accent:#FFFFFF; --alert:#D83A3A;
+    --radius:26px; --radius-sm:16px;
+    --shadow:0 10px 28px rgba(0,0,0,.14);
+    --serif:ui-serif,"New York",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B0B0D; --card:#1C1C21; --tile:rgba(255,255,255,.06); --ink:#F5F5F7; --muted:#8E8E96;
+      --line:rgba(255,255,255,.10); --accent:#FF9EC4; --on-accent:#2A0713; --alert:#FF6B6B;
+      --shadow:0 10px 30px rgba(0,0,0,.55);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--sans); line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 0 96px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:36px;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .tile{width:44px; height:44px; border-radius:14px; background:var(--accent);
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+    color:var(--on-accent); font-weight:700; font-size:15px; letter-spacing:.02em;}
+  .brand-name{font-family:var(--serif); font-weight:600; font-size:18px; letter-spacing:-.015em;}
+  .eyebrow{font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 10px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:36px; line-height:1.05; letter-spacing:-.015em; margin:0 0 12px;}
+  h2{font-family:var(--serif); font-weight:600; font-size:22px; line-height:1.15; letter-spacing:-.01em; margin:38px 0 10px;}
+  p{margin:0 0 14px;}
+  .lead{color:var(--muted); font-size:17px; line-height:1.55;}
+  .muted{color:var(--muted);}
+  ul{margin:0 0 14px; padding-left:20px;}
+  li{margin:7px 0;}
+  a{color:var(--accent); text-decoration:none; font-weight:600;}
+  a:hover{text-decoration:underline; text-underline-offset:3px;}
+  .updated{color:var(--muted); font-size:14px; margin:0 0 8px;}
+  .card{background:var(--card); border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0 0; box-shadow:var(--shadow);}
+  footer{color:var(--muted); font-size:13px; margin-top:44px; padding-top:22px; border-top:1px solid var(--line);}
+  .toggle{display:inline-flex; background:var(--card); border-radius:999px; padding:4px; border:1px solid var(--line);}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--ink); font-family:var(--sans); font-weight:600; font-size:13px; padding:6px 14px; border-radius:999px; cursor:pointer;}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:var(--on-accent);}
+  .lang-sv{display:none;}
+  html[data-lang="sv"] .lang-en{display:none;}
+  html[data-lang="sv"] .lang-sv{display:block;}
+  .cta{display:inline-block; background:var(--accent); color:var(--on-accent); font-weight:600;
+    padding:13px 22px; border-radius:16px; margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="tile" aria-hidden="true">CAT</span>
+      <span class="brand-name lang-en" style="display:inline">Pet Cats to Space</span>
+      <span class="brand-name lang-sv" style="display:none">Klappa katter till rymden</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language / Språk">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="sv" aria-pressed="false">Svenska</button>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="lang-en">
+    <p class="eyebrow">Support</p>
+    <h1>How high can you get?</h1>
+    <p class="lead">Pet Cats to Space is a tower with no top. Climb, pet every cat you pass, and try not to fall far. The answers below cover the usual questions — and email always works.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Contact:</strong> <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a><br>
+      <span class="muted">Include your iOS version and what happened just before things went wrong — it makes fixes much faster.</span></p>
+    </div>
+
+    <h2>How do I play?</h2>
+    <ul>
+      <li>Use the two arrow buttons at the bottom left to move and the yellow button at the bottom right to jump.</li>
+      <li>With a hardware keyboard: arrow keys or A/D to move, up arrow, W or space to jump.</li>
+      <li>Platforms are one-way — you pass up through them and land on top when you come down.</li>
+      <li>Walk into a cat to pet it. Petted cats stay happy for the rest of the run.</li>
+    </ul>
+
+    <h2>What kills me?</h2>
+    <p>Only falling. You have three hearts: a long drop costs one heart, and a very long drop ends the run instantly. A fall of one platform is always safe, so the trick is to climb steadily rather than fast.</p>
+
+    <h2>How is my score worked out?</h2>
+    <p>Your score is the highest point you reached in metres — not where you were standing when you died. Your best run is saved on your device and shown under the current height.</p>
+
+    <h2>Why do the cats wear helmets?</h2>
+    <p>Above roughly 175 metres the tower leaves the atmosphere. Gravity drops, the platforms turn to metal, the stars come out, and everyone sensible puts a helmet on.</p>
+
+    <h2>How do I reset my best score?</h2>
+    <p>The best score lives only on your device. Deleting and reinstalling the game clears it.</p>
+
+    <h2>About tips</h2>
+    <p>The game is free, has no ads and always will be. Tips are one-off purchases handled by Apple — they unlock nothing, give no advantage and are not restorable, they're just appreciated. Billing questions are best handled by <a href="https://support.apple.com/billing">Apple Support</a>.</p>
+
+    <p style="margin-top:30px"><a class="cta" href="mailto:sebastian.bolling@gmail.com">Email support</a></p>
+  </section>
+
+  <!-- ============ SVENSKA ============ -->
+  <section class="lang-sv">
+    <p class="eyebrow">Support</p>
+    <h1>Hur högt kommer du?</h1>
+    <p class="lead">Klappa katter till rymden är ett torn utan topp. Klättra, klappa varje katt du passerar och försök att inte falla långt. Svaren nedan täcker de vanligaste frågorna — och mejl fungerar alltid.</p>
+
+    <div class="card">
+      <p style="margin:0"><strong>Kontakt:</strong> <a href="mailto:sebastian.bolling@gmail.com">sebastian.bolling@gmail.com</a><br>
+      <span class="muted">Skriv gärna vilken iOS-version du har och vad som hände precis innan det gick fel — då går det snabbare att fixa.</span></p>
+    </div>
+
+    <h2>Hur spelar man?</h2>
+    <ul>
+      <li>Använd de två pilknapparna nere till vänster för att gå och den gula knappen nere till höger för att hoppa.</li>
+      <li>Med tangentbord: piltangenter eller A/D för att gå, uppåtpil, W eller mellanslag för att hoppa.</li>
+      <li>Plattformarna släpper igenom underifrån — du hoppar upp genom dem och landar på dem på vägen ner.</li>
+      <li>Gå in i en katt för att klappa den. Klappade katter är glada resten av rundan.</li>
+    </ul>
+
+    <h2>Vad kan döda mig?</h2>
+    <p>Bara fall. Du har tre hjärtan: ett långt fall kostar ett hjärta och ett mycket långt fall avslutar rundan direkt. Att falla en plattform är alltid ofarligt, så konsten är att klättra jämnt snarare än snabbt.</p>
+
+    <h2>Hur räknas poängen?</h2>
+    <p>Poängen är den högsta punkt du nådde i meter — inte där du stod när du dog. Din bästa runda sparas på din enhet och visas under den aktuella höjden.</p>
+
+    <h2>Varför har katterna hjälm?</h2>
+    <p>Runt 175 meter lämnar tornet atmosfären. Tyngdkraften minskar, plattformarna blir av metall, stjärnorna tänds och alla vettiga varelser tar på sig hjälm.</p>
+
+    <h2>Hur nollställer jag mitt rekord?</h2>
+    <p>Rekordet finns bara på din enhet. Raderar du spelet och installerar det igen försvinner det.</p>
+
+    <h2>Om dricks</h2>
+    <p>Spelet är gratis, har ingen reklam och kommer alltid att vara det. Dricks är engångsköp som hanteras av Apple — de låser inte upp något, ger ingen fördel och kan inte återställas, de är bara uppskattade. Frågor om betalning hanteras bäst av <a href="https://support.apple.com/billing">Apples support</a>.</p>
+
+    <p style="margin-top:30px"><a class="cta" href="mailto:sebastian.bolling@gmail.com">Mejla support</a></p>
+  </section>
+
+
+  <footer>
+    <span class="lang-en" style="display:inline">© 2026 Sebastian Bolling · <a href="PetCatsToSpacePrivacyPolicy.html">Privacy Policy</a></span>
+    <span class="lang-sv" style="display:none">© 2026 Sebastian Bolling · <a href="PetCatsToSpacePrivacyPolicy.html">Integritetspolicy</a></span>
+  </footer>
+</div>
+
+<script>
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll('.toggle button');
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
+    document.querySelectorAll('.brand-name, footer span').forEach(el => {
+      const isSv = el.classList.contains('lang-sv');
+      el.style.display = (isSv === (lang === 'sv')) ? 'inline' : 'none';
+    });
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  if ((navigator.language || '').toLowerCase().startsWith('sv')) setLang('sv');
+</script>
+</body>
+</html>
